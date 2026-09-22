@@ -236,6 +236,17 @@
   .edu-row .when{font-family:var(--mono);font-size:12.5px;color:var(--amber);text-align:right;white-space:nowrap;}
   .edu-row .cgpa{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:4px;}
 
+  .exp-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:10px;}
+  .exp-row .role{font-size:15.5px;font-weight:600;}
+  .exp-row .org{color:var(--muted);font-size:14px;margin-top:4px;}
+  .exp-row .when{font-family:var(--mono);font-size:12.5px;color:var(--amber);text-align:right;white-space:nowrap;}
+  .exp-status{
+    display:inline-block;margin-top:6px;font-family:var(--mono);font-size:10.5px;color:var(--green);
+    border:1px solid rgba(111,207,151,.35);border-radius:4px;padding:2px 8px;
+  }
+  .exp-note{color:var(--muted);font-size:14px;margin-top:12px;}
+  .exp-note a{color:var(--cyan);}
+
   /* ---------- CONTACT / FOOTER ---------- */
   footer{padding:60px 0 50px;}
   .contact-term{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:26px 28px;}
@@ -256,6 +267,7 @@
     <div class="brand">arunraj<span>@</span>soc</div>
     <div class="navlinks">
       <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
       <a href="#projects">projects</a>
       <a href="#investigations">writeups</a>
       <a href="#certs">certs</a>
@@ -312,10 +324,30 @@
       <div class="skill-panel reveal"><div class="k">programming</div><p>Python, Bash</p></div>
       <div class="skill-panel reveal"><div class="k">operating_systems</div><p>Linux, Kali Linux</p></div>
       <div class="skill-panel reveal"><div class="k">networking</div><p>TCP/IP, DNS, HTTP/HTTPS, Ports, OSI Model</p></div>
-      <div class="skill-panel reveal"><div class="k">cybersecurity</div><p>SOC Fundamentals, SIEM, Log Analysis, Incident Response, Phishing Analysis, Vulnerability Scanning, OWASP Top 10, Network Security Basics, Port Scanning</p></div>
-      <div class="skill-panel reveal"><div class="k">tools</div><p>Git, GitHub, Burp Suite (Basic), Wireshark, tcpdump, Nmap, VirtualBox, TryHackMe</p></div>
+      <div class="skill-panel reveal"><div class="k">cybersecurity</div><p>SOC Fundamentals, SIEM, Log Analysis, Incident Response, Phishing Analysis, Vulnerability Scanning, OWASP Top 10, Network Security Basics, Port Scanning, API Security</p></div>
+      <div class="skill-panel reveal"><div class="k">tools</div><p>Git, GitHub, Burp Suite (Basic), Wireshark, tcpdump, Nmap, OWASP ZAP, VirtualBox, TryHackMe</p></div>
       <div class="skill-panel reveal"><div class="k">soft_skills</div><p>Problem Solving, Analytical Thinking, Attention to Detail, Continuous Learning</p></div>
     </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="sec-path">~/experience</div>
+        <h2 class="sec-title">Experience</h2>
+      </div>
+    </div>
+    <div class="exp-row reveal">
+      <div>
+        <div class="role">Cyber Security Intern</div>
+        <div class="org">Future Interns (Remote)</div>
+        <div class="exp-status">ongoing</div>
+      </div>
+      <div class="when">Sep 2026 &ndash; Oct 2026</div>
+    </div>
+    <p class="exp-note reveal">Hands-on cybersecurity internship covering vulnerability assessment, phishing analysis, and API security — the three completed deliverables are listed first in the <a href="#projects">project case log</a> below.</p>
   </div>
 </section>
 
@@ -325,12 +357,48 @@
       <div>
         <div class="sec-path">~/incidents</div>
         <h2 class="sec-title">Project case log</h2>
-        <p class="sec-sub">Hands-on builds spanning identity resolution, network tooling, and personal security auditing.</p>
+        <p class="sec-sub">Internship deliverables from Future Interns, plus personal builds spanning identity resolution, network tooling, and security auditing.</p>
       </div>
     </div>
 
     <div class="case reveal">
-      <div class="case-id"><b>01</b>final year</div>
+      <div class="case-id"><b>01</b>internship</div>
+      <div>
+        <h3>Vulnerability Assessment Report</h3>
+        <span class="tag">Nmap</span><span class="tag">OWASP ZAP</span><span class="tag">Future Interns</span>
+        <ul>
+          <li>Performed a read-only vulnerability assessment of a live web application using Nmap and OWASP ZAP.</li>
+          <li>Identified a high-risk outdated JavaScript library and 3 missing security headers, then delivered a prioritized remediation roadmap.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case reveal">
+      <div class="case-id"><b>02</b>internship</div>
+      <div>
+        <h3>Phishing Email Detection &amp; Awareness</h3>
+        <span class="tag">SPF/DKIM/DMARC</span><span class="tag">Email Triage</span><span class="tag">Future Interns</span>
+        <ul>
+          <li>Analyzed phishing, safe, and suspicious email samples via header, SPF/DKIM/DMARC, and content analysis to classify risk.</li>
+          <li>Authored an employee phishing-awareness guide documenting attack patterns and prevention steps.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case reveal">
+      <div class="case-id"><b>03</b>internship</div>
+      <div>
+        <h3>API Security Risk Analysis</h3>
+        <span class="tag">REST API</span><span class="tag">Auth &amp; Authz</span><span class="tag">Future Interns</span>
+        <ul>
+          <li>Conducted a REST API security review covering authentication, authorization, input validation, and response headers.</li>
+          <li>Identified data over-exposure and technology-disclosure findings and documented remediation steps.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case reveal">
+      <div class="case-id"><b>04</b>final year</div>
       <div>
         <h3>Unique User Identification Across Platforms</h3>
         <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">GNN</span><span class="tag">Entity Resolution</span>
@@ -343,7 +411,7 @@
     </div>
 
     <div class="case reveal">
-      <div class="case-id"><b>02</b>tooling</div>
+      <div class="case-id"><b>05</b>tooling</div>
       <div>
         <h3>Python Port Scanner</h3>
         <span class="tag">Python</span><span class="tag">Sockets</span><span class="tag">GitHub</span>
@@ -355,7 +423,7 @@
     </div>
 
     <div class="case reveal">
-      <div class="case-id"><b>03</b>osint</div>
+      <div class="case-id"><b>06</b>osint</div>
       <div>
         <h3>Personal Digital Security Audit</h3>
         <span class="tag">OSINT</span><span class="tag">Epieos</span><span class="tag">HIBP</span>
@@ -367,7 +435,7 @@
     </div>
 
     <div class="case reveal">
-      <div class="case-id"><b>04</b>tooling</div>
+      <div class="case-id"><b>07</b>tooling</div>
       <div>
         <h3>Password Strength Checker</h3>
         <span class="tag">Python</span>
